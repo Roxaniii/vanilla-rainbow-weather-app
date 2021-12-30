@@ -1,3 +1,31 @@
+.weather-app {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 30px;
+}
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
 body {
-  color: green;
+  font-family: "Lato", sans-serif;
+}
+h1 {
+  font-weight: 700;
+  margin-top: 15px;
+}
+h2 {
+  font-weight: 700;
+  font-size: 45px;
+}
+h3 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+.quote {
+  font-family: "Licorice", cursive;
+  text-align: center;
+  font-size: large;
 }
