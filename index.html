@@ -28,45 +28,53 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <span>
-            <div class="row g-3 align-items-center">
-              <div class="col-auto">
-                <input
-                  type="password"
-                  id="inputPassword6"
-                  class="form-control"
-                  aria-describedby="passwordHelpInline"
-                />
-              </div>
+          <div class="row">
+            <div class="col-5">
+              <input
+                type="city"
+                id="inputCity"
+                class="form-control"
+                aria-describedby="passwordHelpInline"
+                placeholder="Enter City Name"
+              />
             </div>
 
-            <button type="button" class="btn btn-primary">
-              <i class="fas fa-search-location"></i>
-            </button>
-            <button type="button" class="btn btn-outline-primary">°C</button>
-
-            <button type="button" class="btn btn-outline-primary">°F</button>
-          </span>
-
+            <div class="col-1">
+              <button type="button" class="btn btn-dark">
+                <i class="fas fa-search-location"></i>
+              </button>
+            </div>
+            <div class="col-1">
+              <button type="button" class="btn btn-outline-dark">
+                <strong>°C</strong>
+              </button>
+            </div>
+            <div class="col-1">
+              <button type="button" class="btn btn-outline-dark">
+                <strong>°F</strong>
+              </button>
+            </div>
+          </div>
+          <p class="date">Current Date</p>
           <div class="container">
             <div class="row">
-              <div class="col">
+              <div class="col" id="city-info">
                 <h1>New York</h1>
                 <h2>20°C</h2>
-                <h3>Current Date</h3>
+                <ul class="weather-condition">
+                  <li>Humidity: 0%</li>
+                  <li>Precipitation: 73%</li>
+                  <li>Wind: 2km/h</li>
+                </ul>
               </div>
               <div class="col">
-                <ul class="weather-condition">
-                  <li>humidity: 0%</li>
-                  <li>precipitation: 73%</li>
-                  <li>wind: 2km/h</li>
-                </ul>
+                <i class="fas fa-rainbow"></i>
               </div>
             </div>
           </div>
 
           <p class="quote">
-            Some people feel the rain, ohers just get wet. - Bob Marley
+            "Some people feel the rain, ohers just get wet" - Bob Marley
           </p>
           <hr />
         </div>

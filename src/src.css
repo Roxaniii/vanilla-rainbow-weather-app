@@ -2,6 +2,11 @@
   border: 1px solid grey;
   border-radius: 5px;
   padding: 30px;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(255, 246, 236) 39.5%,
+    rgba(100, 46, 122, 0.23) 100.2%
+  );
 }
 .weather-app-wrapper {
   max-width: 600px;
@@ -13,19 +18,30 @@ body {
 }
 h1 {
   font-weight: 700;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 h2 {
   font-weight: 700;
   font-size: 45px;
 }
-h3 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  font-size: 15px;
+
+ul {
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.fas.fa-rainbow {
+  margin-top: 20px;
+  color: #af460f;
+  font-size: 120px;
 }
 .quote {
-  font-family: "Licorice", cursive;
   text-align: center;
   font-size: large;
+  font-size: 12px;
+  margin-top: 20px;
+}
+#city-info {
+  padding-left: 0;
 }
