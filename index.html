@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@100;300;400;700&family=Licorice&family=Roboto+Mono&family=Roboto:wght@100;300;400;500;700&family=Yuji+Syuku&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script
       src="https://kit.fontawesome.com/41e3992365.js"
       crossorigin="anonymous"
@@ -55,12 +56,13 @@
               </button>
             </div>
           </div>
-          <p class="date">Current Date</p>
+          <p id="date"></p>
           <div class="container">
             <div class="row">
               <div class="col" id="city-info">
-                <h1>New York</h1>
-                <h2>20°C</h2>
+                <h1 id="city"></h1>
+                <h2 id="temperature"></h2>
+                <h3 id="description"></h3>
                 <ul class="weather-condition">
                   <li>Humidity: 0%</li>
                   <li>Precipitation: 73%</li>
@@ -74,8 +76,12 @@
           </div>
 
           <p class="quote">
-            "Some people feel the rain, ohers just get wet" - Bob Marley
+            <em>"Some people feel the rain, others just get wet" </em>
+            <span
+              ><button><i class="fas fa-music"></i></button
+            ></span>
           </p>
+
           <hr />
         </div>
         <small>

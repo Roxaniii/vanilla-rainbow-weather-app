@@ -1,3 +1,11 @@
+body {
+  font-family: "Lato", sans-serif;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(255, 246, 236) 39.5%,
+    rgba(100, 46, 122, 0.23) 100.2%
+  );
+}
 .weather-app {
   border: 1px solid grey;
   border-radius: 5px;
@@ -13,14 +21,7 @@
   margin: 0 auto;
   margin-top: 25px;
 }
-body {
-  font-family: "Lato", sans-serif;
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgb(255, 246, 236) 39.5%,
-    rgba(100, 46, 122, 0.23) 100.2%
-  );
-}
+
 h1 {
   font-weight: 700;
   margin-top: 20px;
@@ -29,12 +30,17 @@ h2 {
   font-weight: 700;
   font-size: 45px;
 }
-
+h3 {
+  font-size: 35px;
+}
 ul {
   list-style: none;
   text-align: left;
   margin: 0;
   padding: 0;
+}
+#city-info {
+  padding-left: 0;
 }
 .fas.fa-rainbow {
   margin-top: 20px;
@@ -47,6 +53,8 @@ ul {
   font-size: 12px;
   margin-top: 20px;
 }
-#city-info {
-  padding-left: 0;
+
+.fas.fa-music {
+  border: none;
+  border-radius: 0%;
 }
