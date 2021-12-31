@@ -44,4 +44,4 @@ let months = [
 ];
 let month = months[now.getMonth()];
 let dateElement = document.querySelector("#date");
-dateElement.innerHTML = `${day} ${month} ${date}, ${hours}:${minutes},${seconds}, ${year}`;
+dateElement.innerHTML = `${day} ${month} ${date}, ${hours}:${minutes}:${seconds}, ${year}`;

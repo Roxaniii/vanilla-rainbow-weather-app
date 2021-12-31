@@ -21,7 +21,9 @@ body {
   margin: 0 auto;
   margin-top: 25px;
 }
-
+#date {
+  font-size: 15px;
+}
 h1 {
   font-weight: 700;
   margin-top: 20px;
