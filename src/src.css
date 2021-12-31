@@ -33,6 +33,7 @@ h2 {
 h3 {
   font-size: 20px;
   margin-bottom: 15px;
+  text-transform: capitalize;
 }
 ul {
   list-style: none;
