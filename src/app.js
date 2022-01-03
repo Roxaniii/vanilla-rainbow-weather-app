@@ -1,7 +1,7 @@
 function displayTemperature(response) {
   console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(response.data.main.temp);
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
   let cityElement = document.querySelector("#city");
   cityElement.innerHTML = response.data.name;
   let descriptionElement = document.querySelector("#description");
@@ -15,6 +15,7 @@ function displayTemperature(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  celsiusTemperature = response.data.main.temp;
 }
 
 function search(city) {
@@ -29,10 +30,29 @@ function handleSubmit(event) {
   let inputCityElement = document.querySelector("#inputCity");
   search(inputCityElement.value);
 }
-search("Berlin");
 
+function showFahrenheitTemp(event) {
+  let temperatureElement = document.querySelector("#temperature");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+function showCelsiusTemp(event) {
+  temperatureElement = celsiusTemperature;
+}
+let celsiusTemperature = null;
+
+//these two variables are the only ones created outside of functions. They are "global variables"
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+let fahrenheit = document.querySelector("#fahrenheit-btn");
+fahrenheit.addEventListener("click", showFahrenheitTemp);
+
+let celsius = document.querySelector("#celsius-btn");
+celsius.addEventListener("click", showCelsiusTemp);
+
+search("Berlin");
 
 //Date
 let now = new Date();
