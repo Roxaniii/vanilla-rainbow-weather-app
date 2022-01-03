@@ -46,9 +46,8 @@ ul {
 #city-info {
   padding-left: 0;
 }
-.fas.fa-rainbow {
+#weather-icon {
   margin-top: 20px;
-  color: #af460f;
   font-size: 120px;
 }
 .quote {
