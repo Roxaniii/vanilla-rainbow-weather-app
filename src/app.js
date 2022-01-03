@@ -17,12 +17,22 @@ function displayTemperature(response) {
   );
 }
 
-let apiKey = "f570a1fbc37130aef5bf06a2e40664d1";
-let city = "Faro";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+function search(city) {
+  let apiKey = "f570a1fbc37130aef5bf06a2e40664d1";
 
-console.log(apiUrl);
-axios.get(apiUrl).then(displayTemperature);
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let inputCityElement = document.querySelector("#inputCity");
+  search(inputCityElement.value);
+}
+search("Berlin");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
 
 //Date
 let now = new Date();

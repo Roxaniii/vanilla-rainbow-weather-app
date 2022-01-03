@@ -29,33 +29,34 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <div class="row">
-            <div class="col-5">
-              <input
-                type="city"
-                id="inputCity"
-                class="form-control"
-                aria-describedby="passwordHelpInline"
-                placeholder="Enter City Name"
-              />
+          <form id="search-form">
+            <div class="row">
+              <div class="col-5">
+                <input
+                  type="text"
+                  id="inputCity"
+                  class="form-control"
+                  placeholder="Enter City Name"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-1">
+                <button type="submit" class="btn btn-dark" value="search">
+                  <i class="fas fa-search-location"></i>
+                </button>
+              </div>
+              <div class="col-1">
+                <button type="submit" class="btn btn-outline-dark">
+                  <strong>°C</strong>
+                </button>
+              </div>
+              <div class="col-1">
+                <button type="submit" class="btn btn-outline-dark">
+                  <strong>°F</strong>
+                </button>
+              </div>
             </div>
-
-            <div class="col-1">
-              <button type="button" class="btn btn-dark">
-                <i class="fas fa-search-location"></i>
-              </button>
-            </div>
-            <div class="col-1">
-              <button type="button" class="btn btn-outline-dark">
-                <strong>°C</strong>
-              </button>
-            </div>
-            <div class="col-1">
-              <button type="button" class="btn btn-outline-dark">
-                <strong>°F</strong>
-              </button>
-            </div>
-          </div>
+          </form>
           <p id="date"></p>
           <div class="container">
             <div class="row">
