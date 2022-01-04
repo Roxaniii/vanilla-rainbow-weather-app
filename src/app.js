@@ -13,7 +13,7 @@ function displayTemperature(response) {
   let iconElement = document.querySelector("#weather-icon");
   iconElement.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@4x.png`
   );
   celsiusTemperature = response.data.main.temp;
 }
@@ -32,13 +32,16 @@ function handleSubmit(event) {
 }
 
 function showFahrenheitTemp(event) {
+  event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
 function showCelsiusTemp(event) {
-  temperatureElement = celsiusTemperature;
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 let celsiusTemperature = null;
 
@@ -46,13 +49,13 @@ let celsiusTemperature = null;
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-let fahrenheit = document.querySelector("#fahrenheit-btn");
-fahrenheit.addEventListener("click", showFahrenheitTemp);
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", showFahrenheitTemp);
 
-let celsius = document.querySelector("#celsius-btn");
-celsius.addEventListener("click", showCelsiusTemp);
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", showCelsiusTemp);
 
-search("Berlin");
+search("City");
 
 //Date
 let now = new Date();

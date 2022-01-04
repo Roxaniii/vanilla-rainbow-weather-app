@@ -45,51 +45,47 @@
                   <i class="fas fa-search-location"></i>
                 </button>
               </div>
-              <div class="col-1">
-                <button
-                  type="submit"
-                  class="btn btn-outline-dark"
-                  id="celsius-btn"
-                >
-                  <strong>°C</strong>
-                </button>
-              </div>
-              <div class="col-1">
-                <button
-                  type="submit"
-                  class="btn btn-outline-dark"
-                  id="fahrenheit-btn"
-                >
-                  <strong>°F</strong>
-                </button>
-              </div>
             </div>
           </form>
           <p id="date"></p>
           <div class="container">
             <div class="row">
               <div class="col" id="city-info">
-                <h1 id="city"></h1>
-                <h2 id="temperature"></h2>
+                <div class="clearfix">
+                  <h1 id="city"></h1>
 
-                <h3 id="description"></h3>
-                <ul class="weather-condition">
-                  <li>
-                    Humidity: <span id="humidity"></span
-                    ><span class="percentage"> %</span>
-                  </li>
+                  <h2>
+                    <span id="temperature"></span
+                    ><span class="float-left" id="measurement-unit">
+                      <a href="#" id="celsius-link"> °C</a> |<a
+                        href="#"
+                        id="fahrenheit-link"
+                      >
+                        °F</a
+                      >
+                    </span>
+                  </h2>
 
-                  <li>
-                    Wind: <span id="wind"></span>
-                    <span class="percentage">km/h</span>
-                  </li>
-                </ul>
+                  <h3 id="description"></h3>
+                  <ul class="weather-condition">
+                    <li>
+                      Humidity: <span id="humidity"></span
+                      ><span class="percentage"> %</span>
+                    </li>
+
+                    <li>
+                      Wind: <span id="wind"></span>
+                      <span class="percentage">km/h</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div class="col">
                 <img
                   src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
                   alt="clear"
                   id="weather-icon"
+                  class="float-left"
                 />
               </div>
             </div>

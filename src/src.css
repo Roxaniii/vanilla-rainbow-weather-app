@@ -1,19 +1,19 @@
 body {
   font-family: "Lato", sans-serif;
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgb(255, 246, 236) 39.5%,
-    rgba(100, 46, 122, 0.23) 100.2%
+  background: linear-gradient(
+    44.8deg,
+    rgba(255, 136, 102, 0.67) -53.1%,
+    rgba(255, 221, 136, 0.28) 49%
   );
 }
 .weather-app {
   border: 1px solid grey;
   border-radius: 5px;
   padding: 30px;
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgb(255, 246, 236) 39.5%,
-    rgba(100, 46, 122, 0.23) 100.2%
+  background: linear-gradient(
+    44.8deg,
+    rgba(255, 136, 102, 0.67) -53.1%,
+    rgba(255, 221, 136, 0.28) 49%
   );
 }
 .weather-app-wrapper {
@@ -32,6 +32,19 @@ h2 {
   font-weight: 700;
   font-size: 45px;
 }
+#measurement-unit {
+  font-size: 15px;
+}
+#celsius-link {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+#fahrenheit-link {
+  color: black;
+  text-decoration: none;
+  cursor: default;
+}
 h3 {
   font-size: 20px;
   margin-bottom: 15px;
@@ -48,7 +61,6 @@ ul {
 }
 #weather-icon {
   margin-top: 20px;
-  font-size: 120px;
 }
 .quote {
   text-align: center;
