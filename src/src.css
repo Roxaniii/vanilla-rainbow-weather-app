@@ -37,13 +37,13 @@ h2 {
 }
 #celsius-link {
   color: black;
-  cursor: default;
+  cursor: pointer;
   text-decoration: none;
 }
 #fahrenheit-link {
   color: black;
   text-decoration: none;
-  cursor: default;
+  cursor: pointer;
 }
 h3 {
   font-size: 20px;
@@ -68,8 +68,14 @@ ul {
   font-size: 12px;
   margin-top: 20px;
 }
-
-.fas.fa-music {
-  border: none;
-  border-radius: 0%;
+.weather-forecast {
+  text-align: center;
+}
+.weather-forecast-date {
+  font-weight: bold;
+  font-size: 13px;
+}
+.weather-forecast-temperature {
+  font-weight: bold;
+  font-size: 13px;
 }
